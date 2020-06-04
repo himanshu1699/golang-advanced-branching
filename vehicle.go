@@ -32,21 +32,20 @@ type bike struct {
 
 // Values array for the feedback.json file
 type Values struct {
-     Models []Model = json:"values"
+     Models []Model
 }
 
 // Model array for the feedback.json file
 type Model struct {
-     Name string = json:"model"
-     Feedback []string = json:"feedback"
+     Name string
+     Feedback []string
 }
 
 type feedbackResult struct {
-	var feedbackTotal int
-	var feedbackPositive int
-	var feedbackNegative int
-	var feedbackNeutral int
-
+	 feedbackTotal int
+	 feedbackPositive int
+	 feedbackNegative int
+	 feedbackNeutral int
 }
 
 type rating float32
